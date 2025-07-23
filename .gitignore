@@ -1,0 +1,76 @@
+# Build artifacts
+build/
+bin/
+obj/
+out/
+*.exe
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+
+# IDE files
+.vs/
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Language specific
+# C/C++
+*.pdb
+*.ilk
+*.pch
+
+# Node.js (for frontend projects)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env.local
+.env.*.local
+.next/
+dist/
+
+# Python (for AI/ML projects)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+.venv/
+
+# Go (for microservices)
+vendor/
+*.test
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+.tmp/
+temp/
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Personal notes (if you want to keep them private)
+# notes/personal/ 

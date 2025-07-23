@@ -10,7 +10,7 @@
 1. [Overview](#overview)
 2. [Course Structure](#course-structure)
 3. [Detailed Curriculum](#detailed-curriculum)
-   - [CS Fundamentals & Computer Architecture](#1-cs-fundamentals--computer-architecture)
+   - [CS Fundamentals & Core Systems](#1-cs-fundamentals--core-systems)
    - [Advanced Full-Stack Development](#2-advanced-full-stack-development)
    - [Microservices & Distributed Systems](#3-microservices--distributed-systems)
    - [Application Security](#4-application-security)
@@ -37,7 +37,7 @@ This curriculum provides comprehensive coverage of modern software engineering, 
 
 | Course | Duration | Focus Area |
 |--------|----------|------------|
-| CS Fundamentals & Architecture | 9 weeks (Aug 15 - Oct 10) | CPU design, memory systems, performance |
+| CS Fundamentals & Core Systems | 9 weeks (Aug 15 - Oct 10) | C/C++, data structures, databases, networking, compilers |
 | Advanced Full-Stack Development | 17 weeks (Aug 15 - Dec 5) | React, Next.js, GraphQL, TypeScript |
 | Microservices & Distributed Systems | 12 weeks (Aug 15 - Nov 1) | Go, gRPC, event streaming, consensus |
 | Application Security | 7 weeks (Sep 1 - Oct 15) | OWASP, secure coding, penetration testing |
@@ -48,44 +48,49 @@ This curriculum provides comprehensive coverage of modern software engineering, 
 
 ## 📖 Detailed Curriculum
 
-### 1️⃣ CS Fundamentals & Computer Architecture
+### 1️⃣ CS Fundamentals & Core Systems
 **Duration:** August 15 – October 10 (9 weeks)
 
 #### Weekly Breakdown
 
 | Week | Topic | Assignment | Mini-Project |
 |------|-------|------------|--------------|
-| **1** | **ISA & CPU Models** | Build MIPS-like instruction simulator | Execute basic instructions (ADD, LOAD, STORE) |
-| **2** | **Multi-cycle CPU** | Design control FSM in Verilog | Simulate instruction cycles, validate timing |
-| **3** | **Pipelining & Hazards** | Extend simulator with pipeline stages | Demo data hazards, implement forwarding |
-| **4** | **Superscalar & ILP** | Add superscalar dispatch to pipeline | Measure IPC performance gains |
-| **5** | **Branch Prediction** | Implement bimodal and two-bit predictors | Benchmark misprediction rates |
-| **6** | **Cache Hierarchy** | Write cache simulator (L1/L2) | Analyze hit rates for access patterns |
-| **7** | **Virtual Memory** | Add TLB and page-table simulation | Simulate TLB misses and page faults |
-| **8** | **Multicore & Coherence** | Model multi-core caches + MSI/MESI | Concurrent memory coherence demo |
-| **9** | **Final CPU Project** | Full CPU simulator integration | Performance benchmarking report |
+| **1** | **C/C++ & Memory Management** | Implement dynamic arrays, linked lists in C++ | Memory allocator with malloc/free tracking |
+| **2** | **Data Structures & Algorithms** | Trees, heaps, hash tables, graph algorithms | Red-black tree implementation + benchmarks |
+| **3** | **Computer Architecture** | CPU design, caches, pipelining concepts | Cache simulator (L1/L2) with hit/miss analysis |
+| **4** | **Object-Oriented Design** | C++ classes, inheritance, polymorphism, SOLID | Design pattern implementations (Factory, Observer) |
+| **5** | **Database Systems** | Relational model, SQL, indexing, transactions | Mini SQL database engine with B+ trees |
+| **6** | **Network Programming** | TCP/UDP, socket programming, HTTP protocol | Multi-threaded chat server in C++ |
+| **7** | **Compiler Fundamentals** | Lexical analysis, parsing, AST generation | Build interpreter for simple language |
+| **8** | **Operating Systems** | Processes, threads, synchronization, file systems | Thread pool + producer-consumer simulation |
+| **9** | **Integration Project** | Combine all concepts into larger system | Distributed key-value store with networking |
 
 ---
 
 ### 2️⃣ Advanced Full-Stack Development
 **Duration:** August 15 – December 5 (17 weeks)
 
-#### Module Overview
-- **Weeks 1-2:** Modern React + TypeScript (custom hooks, performance)
-- **Weeks 3-4:** Next.js (SSR/SSG/ISR, API routes)
-- **Weeks 5-6:** GraphQL backend (schema design, Apollo Server/Client)
-- **Weeks 7-8:** Real-time communication (WebSockets/SSE)
-- **Weeks 9-10:** State management (Redux Toolkit/React Query)
-- **Weeks 11-12:** Testing (Jest, React Testing Library, Cypress)
-- **Weeks 13-14:** Build tooling (Webpack/Vite optimization)
-- **Weeks 15-16:** Accessibility & i18n
-- **Week 17:** Final project integration
+#### Weekly Breakdown
 
-#### Key Projects
-- 📊 **Real-time dashboard** with stock/crypto data
-- 🛒 **E-commerce frontend** with SSR product pages
-- 🔄 **Dynamic dashboard** with virtualization
-- 📱 **Live chat application** with WebSockets
+| Week | Topic | Assignment | Mini-Project |
+|------|-------|------------|--------------|
+| **1** | **Modern React + TypeScript** | Custom hooks, performance optimization | Component library with TypeScript generics |
+| **2** | **React Performance & Patterns** | Memoization, virtualization, code splitting | Virtualized data table with 100k+ rows |
+| **3** | **Next.js Fundamentals** | SSR/SSG/ISR implementation | Blog with static generation + ISR |
+| **4** | **Next.js API Routes & Middleware** | API design, authentication middleware | REST API with JWT auth and rate limiting |
+| **5** | **GraphQL Schema Design** | Schema-first development, resolvers | Product catalog GraphQL API |
+| **6** | **Apollo Server/Client Integration** | Caching, optimistic updates, subscriptions | Real-time inventory management system |
+| **7** | **WebSockets & Real-time** | Socket.io, Server-Sent Events | Live collaborative whiteboard |
+| **8** | **Real-time Data Streaming** | Event-driven architecture, WebRTC basics | Live chat with file sharing and video calls |
+| **9** | **State Management - Redux Toolkit** | Modern Redux patterns, RTK Query | Complex form wizard with persistent state |
+| **10** | **React Query & Server State** | Caching strategies, background sync | Offline-capable todo app with sync |
+| **11** | **Testing Strategy** | Jest, React Testing Library setup | Comprehensive test suite for e-commerce |
+| **12** | **E2E Testing & CI Integration** | Cypress, Playwright, GitHub Actions | Automated testing pipeline |
+| **13** | **Build Optimization** | Webpack/Vite configuration, bundle analysis | Performance-optimized production build |
+| **14** | **Module Federation & Microfrontends** | Sharing components across apps | Multi-app dashboard with shared components |
+| **15** | **Accessibility & WCAG** | Screen readers, keyboard navigation | Fully accessible form system |
+| **16** | **Internationalization & Localization** | i18next, dynamic locale loading | Multi-language e-commerce platform |
+| **17** | **Full-Stack Integration** | Combine all concepts | Production-ready SaaS application |
 
 ---
 
