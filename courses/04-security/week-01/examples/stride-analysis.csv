@@ -1,0 +1,10 @@
+Threat Category,Threat Description,Assets at Risk,Mitigation Strategy,Risk Level,Likelihood,Impact,Risk Score,Priority
+Spoofing,Attackers impersonate legitimate users,User accounts,Strong authentication and session management,HIGH,3,3,9,1
+Spoofing,Attackers forge authentication tokens,Authentication system,JWT validation and token expiration,HIGH,2,3,6,2
+Tampering,Unauthorized modification of user data,User profiles and posts,Input validation and authorization checks,HIGH,3,3,9,1
+Tampering,Code injection attacks,Application code,Input sanitization and prepared statements,HIGH,2,3,6,2
+Repudiation,Users deny actions they performed,Audit trails,Comprehensive logging and digital signatures,MEDIUM,2,2,4,3
+Information Disclosure,Unauthorized access to private messages,User communications,Encryption and access controls,HIGH,3,3,9,1
+Information Disclosure,Database dump attacks,User data,Database security and network segmentation,HIGH,2,3,6,2
+Denial of Service,Service unavailability due to attacks,Platform availability,Rate limiting and resource monitoring,MEDIUM,3,2,6,2
+Elevation of Privilege,Unauthorized admin access,System administration,Role-based access control and privilege separation,HIGH,2,3,6,2 

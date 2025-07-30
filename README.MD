@@ -13,7 +13,8 @@ cs-mastery/
 │   ├── 03-microservices/       # Go, gRPC, distributed systems
 │   ├── 04-security/            # OWASP, DevSecOps
 │   ├── 05-devops/              # Docker, Kubernetes, CI/CD
-│   └── 06-ai-integration/      # ML pipelines, model serving
+│   ├── 06-ai-integration/      # ML pipelines, model serving
+│   └── 07-digital-homesteading/ # Local-first infrastructure, self-hosting
 ├── 🛠️ projects/
 │   ├── mini-projects/          # Weekly assignments
 │   ├── integrations/           # Cross-course projects
@@ -45,6 +46,7 @@ cs-mastery/
 - [ ] **Application Security** (0/7 weeks)
 - [ ] **DevOps & CI/CD** (0/11 weeks)
 - [ ] **AI Integration** (0/8 weeks)
+- [ ] **Digital Homesteading** (0/12 weeks)
 
 ## 🔄 Daily Workflow
 
@@ -56,4 +58,4 @@ cs-mastery/
 
 ---
 
-*Last updated: [Current Date]*
+*Last updated: August 15, 2024*

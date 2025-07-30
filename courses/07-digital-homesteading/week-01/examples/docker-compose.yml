@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # Docker management UI
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./portainer-data:/data
+    ports:
+      - "9000:9000"
+    networks:
+      - homelab
+
+  # System monitoring
+  glances:
+    image: nicolargo/glances:latest
+    container_name: glances
+    restart: unless-stopped
+    environment:
+      - GLANCES_OPT=-w
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /sys:/host/sys:ro
+      - /proc:/host/proc:ro
+    ports:
+      - "61208:61208"
+    networks:
+      - homelab
+
+  # Network monitoring
+  ntopng:
+    image: ntop/ntopng:latest
+    container_name: ntopng
+    restart: unless-stopped
+    environment:
+      - NTOPNG_OPTIONS="-i eth0"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./ntopng-data:/var/lib/ntopng
+    networks:
+      - homelab
+    cap_add:
+      - NET_ADMIN
+
+networks:
+  homelab:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  portainer-data:
+  ntopng-data: 

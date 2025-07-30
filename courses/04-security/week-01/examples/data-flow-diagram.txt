@@ -1,0 +1,26 @@
+# Data Flow Diagram - Social Media Platform
+
+## User Registration Flow
+Internet ──▶ Load Balancer ──▶ Web Server ──▶ Database
+    │              │              │              │
+    ▼              ▼              ▼              ▼
+User Input ──▶ Validation ──▶ Processing ──▶ Storage
+    │              │              │              │
+    ▼              ▼              ▼              ▼
+Logging ──▶ Audit Trail ──▶ Monitoring ──▶ Backup
+
+## Post Creation Flow
+Authenticated User ──▶ API Gateway ──▶ Application Server ──▶ Database
+        │                    │                    │              │
+        ▼                    ▼                    ▼              ▼
+    Input Data ──▶ Validation ──▶ Content Processing ──▶ Storage
+        │                    │                    │              │
+        ▼                    ▼                    ▼              ▼
+    Logging ──▶ Audit Trail ──▶ Monitoring ──▶ Backup
+
+## Trust Boundaries
+- Internet (Untrusted)
+- Load Balancer (Semi-Trusted)
+- Web Server (Trusted)
+- Application Server (Trusted)
+- Database (Trusted) 
