@@ -85,3 +85,15 @@ Artificial Narrow Intelligence
   - Association Rule Learning
   - Principle Component Analysis
   - Anomaly Detection
+
+## 1.7 Machine Learning, Supervised Learning
+
+- Supervised learning is used to predict both Continuous & Categorical outcomes
+
+## 1.8 Machine Learning, Transparent Algorithms
+
+- Some machine learning algorithms are transparent in the sense that you readily "see" into the model to understand what it is producing
+
+## 1.9 Machine Learning, Blackbox Algorithms
+
+
